@@ -19,7 +19,7 @@ import Foundation
 
 /// Represents a month (with a corresponding year) in a particular calendar. All months are assumed to have been instantiated with the
 /// same `Calendar`, which is enforced throughout the implementation.
-public struct Month {
+public struct Month: Codable {
 
   // MARK: Lifecycle
 
@@ -49,6 +49,8 @@ public struct Month {
 }
 
 // MARK: CustomStringConvertible
+
+
 
 extension Month: CustomStringConvertible {
 
